@@ -28,7 +28,7 @@ app.use('/api/v1', lead);
 // Connect to MongoDB
 mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+  .catch(err => console.log("====",err));
 
 // Start server
 const PORT = process.env.PORT || 4000;
